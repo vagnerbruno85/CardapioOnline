@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {View, Text,FlatList,Image, TouchableOpacity,ActivityIndicator} from 'react-native';
 import { styles } from "../style/style";
-import { NavigationContainer } from "@react-navigation/native";
+
 
 
 export default function Cardapio({navigation}){
@@ -28,13 +28,10 @@ export default function Cardapio({navigation}){
 
 return (
     <View>
-        <Image source={require('../../assets/burger.png')}
-                    style={styles.imgCardapio}
-        />
+        <Image source={require('../../assets/burger.png')} style={styles.imgCardapio}/>
         <View style={styles.marca}>
             <Text style={styles.txtMarca}>{menu.name}</Text>
-            <Text style={styles.subtxtMarca}>{menu.type}, {menu.distance},{menu.stars}</Text>
-            
+            <Text style={styles.subtxtMarca}>{menu.type}, {menu.distance}, {menu.stars}</Text>   
         </View>
         <View style={styles.boxCategoria}>
             <Text style={styles.txtCategoria}>Combos</Text>
@@ -45,7 +42,7 @@ return (
                     keyExtractor={(item) => item.id}
                     renderItem={({ item }) => (
                         <TouchableOpacity
-                            onPress={() => { navigation.navigate('PedidoRealizado',{itemImg:item.image, itemDesc:item.description, itemName:item.name, otherParam:item.price}) }}>
+                            onPress={() => { navigation.navigate('FinalizarPedido',{itemImg:item.image, itemDesc:item.description, itemName:item.name, otherParam:item.price}) }}>
                             <View style={styles.itemGeral}>
                                 <Image source={{ uri: item.image }} style={styles.imgProdutos}/>
                                 <View style={styles.itemDesc}>

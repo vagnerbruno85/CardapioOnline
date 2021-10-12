@@ -1,19 +1,7 @@
 import React, {useEffect,useState} from 'react';
-import {StyleSheet, View,Text} from 'react-native';
+import {StyleSheet, View, Text, TouchableOpacity, Image} from 'react-native';
 
 export default function FinalizarPedido({navigation}){
-    
-
-    const pegadados = () => {
-        return fetch('https://reactnative.dev/movies.json')
-          .then((response) => response.json())
-          .then((json) => {
-            return json.movies;
-          })
-          .catch((error) => {
-            console.error(error);
-          });
-      };
     
     
     return(
@@ -26,8 +14,8 @@ export default function FinalizarPedido({navigation}){
             </View>
             <View style={styles.botoes}>
                 <TouchableOpacity>
-                    <Text style={styles.btncardapio}>Finalizar Pedido
-                        onPress={() => {setLoading(true);navigation.navigate('PedidoRealizado')}}
+                    <Text style={styles.btncardapio}
+                        onPress={() => {navigation.navigate('PedidoRealizado')}}>Finalizar Pedido  
                     </Text>
                 </TouchableOpacity>
             </View>

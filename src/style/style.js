@@ -176,7 +176,7 @@ export const styles=StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
     },
-    imgVesctor:{
+    imgVector:{
         display: 'flex',
         justifyContent:'flex-start',
         alignItems: 'center',
@@ -187,5 +187,10 @@ export const styles=StyleSheet.create({
         fontWeight:500,
         color: '#FFFFFF',
     },
-      
-});
+    txt3:{
+        fontSize:13,
+        fontWeight:300,
+        color: '#FFFFFF',
+    },
+    
+})
