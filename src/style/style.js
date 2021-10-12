@@ -84,7 +84,6 @@ export const styles=StyleSheet.create({
         top: 831,
         borderRadius:32,
         backgroundColor:'#FF919D',
-        
     },
     textbtn:{
         // fontFamily: 'Roboto-Black',
@@ -99,14 +98,94 @@ export const styles=StyleSheet.create({
         // height: 24.5,
         // left: 146,
         top: 848,
-    }
+    },
 
-    // //Style da página Content
+    // //Style da página Cardapio
+    marca:{
+        margin: 32,
+    },
+    txtMarca:{
+        fontSize: 24,
+        color: '#464646',
+    },
+    subtxtMarca:{
+        fontSize:16,
+        color:'#6D6D6D',
+    },
+    imgCardapio: {
+        width: 'auto',
+        height: 200,
+    },
+    txtCategoria:{
+        color:'#696969',
+        fontSize:20,
+    },
+    itemGeral:{
+        marginVertical: 12, 
+        backgroundColor: '#BFBFBF30', 
+        borderRadius: 32, 
+        flexDirection: 'row',
+    },
+    itemDesc:{
+        width: '60%', 
+        margin:12, 
+        // paddingVertical: 0,
+        justifyContent:'space-around',
+    },
+    txtProduto:{
+        fontSize:16,
+        fontWeight:500,
+        color:'#696969',
+    },
+    imgProdutos:{ 
+        width: 120, 
+        height: 140, 
+        borderTopLeftRadius: 32, 
+        borderBottomLeftRadius: 32,
+    },
+    txtNome:{
+        fontSize:16,
+        color: '#696969',
+    },
+    txtDescricao:{
+        fontSize:11,
+        color:'#888888',
+        paddingRight:16,
+    },
+    txtPreco:{
+        textAlign: 'right', 
+        color:'green',
+        marginRight: 32,
+    },
+    boxCategoria:{
+        margin:32,
+    },
+    boxProduto:{
+        width: '100%', 
+        height: 160,
+    },
+
+    // //Styles página ...
     
-    // //Styles página IMC
-    
-    // //Style da página Informação
-    
-    // //Styles Footer
+    // //Style da página Pedido Realizado
+
+    container:{
+        display: 'flex',
+        flexDirection: 'column',
+        height:'100%',
+        justifyContent:'center',
+        alignItems:'center',
+    },
+    imgVesctor:{
+        display: 'flex',
+        justifyContent:'flex-start',
+        alignItems: 'center',
+        color:"#FFFFFF",
+    },
+    txt2:{
+        fontSize:24,
+        fontWeight:500,
+        color: '#FFFFFF',
+    },
       
 });
