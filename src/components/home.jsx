@@ -16,8 +16,9 @@ export default function Home({navigation}){
             <View style={styles.boxB}><Text style={styles.text2}>Nós resolvemos isso</Text></View>
             <View style={styles.boxC}><Text style={styles.text3}>Faça seu pedido agora mesmo
                     na IT Burguer e aproveite os descontos e vantagens de nossa plataforma!</Text></View>
-            <TouchableOpacity style={styles.btncardapio} 
-                onPress={() => {navigation.navigate('Cardapio')}}>
+            <View style={styles.btn}>
+                <TouchableOpacity style={styles.btncardapio} 
+                    onPress={() => {navigation.navigate('Cardapio')}}>
                     <LinearGradient 
                         style={{
                             position: 'absolute',
@@ -26,11 +27,12 @@ export default function Home({navigation}){
                             borderRadius: 32}}
                             colors={['#F26172','#FF919D']
                         }>
+                        <Text style={styles.textbtn} >Ver Cardapio</Text>   
                     </LinearGradient>
-                    
-            </TouchableOpacity>
-                          
-            <Text style={styles.textbtn} >Ver Cardapio</Text>
+                        
+                </TouchableOpacity>
+            </View>                
+            
         </SafeAreaView>
     );
 }
