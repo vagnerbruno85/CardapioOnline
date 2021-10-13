@@ -13,11 +13,11 @@ export default function Cardapio({navigation}){
             const produtos = await fetch('https://615b13564a360f0017a8147e.mockapi.io/menu');
             const menu = await produtos.json();
             setMenu(menu[0]);
-
+            console.log(menu);
             
         }catch (error) {
             console.error(error);
-            // fetch('https://static-images.ifood.com.br/image/upload/t_high/logosgde/158a1584-f939-4ef0-b1fc-526a18b29788/202107060004_hm6t_i.jpg')
+
         }finally{
             setLoading(false);
         }
@@ -71,7 +71,7 @@ return (
                         data={menu.drinks}
                         renderItem={({ item }) => (
                             <TouchableOpacity
-                            onPress={() => { navigation.navigate('FinalizarPedido', {itemImg:item.image, itemName:item.name, itemDesc:item.description, otherParam:item.price}) }}>
+                            onPress={() => { navigation.navigate('PedidoRealizado', {itemImg:item.image, itemName:item.name, itemDesc:item.description, otherParam: item.price}) }}>
                                 <View style={styles.itemGeral}>
                                     <Image source={{ uri: item.image }} style={styles.imgProdutos}/>
                                     <View style={styles.itemDesc}>

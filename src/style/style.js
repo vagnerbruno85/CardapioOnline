@@ -26,6 +26,7 @@ export const styles=StyleSheet.create({
         textAlign: 'center'
     },
     text1: {
+        // fontFamily: 'Roboto-Black',
         fontSize: 48,
         fontWeight:900,
         textAlign: 'center', 
@@ -33,48 +34,69 @@ export const styles=StyleSheet.create({
     },
 
     text2: {
+        // fontFamily: 'Roboto-Black',
         fontSize: 26,
         fontWeight:500,
         textAlign: 'center',       
         color:'#F26172',
     },
     text3: {
+        // fontFamily: 'Roboto-Black',
         fontSize: 18,
         fontWeight:500,
         textAlign: 'center',   
         color:'#252525',
     },
     boxA:{
+        // position: 'absolute',
         position:'relative',
         alignItems:'center',
+        // width: 264,
+        // height: 56, 
+        // left: 89,
         top: 495,
     },
     boxB:{
+        // position: 'absolute',
         position:'relative',
         alignItems:'center',
+        // width: 244,
+        // height: 30,
+        // left: 91,
         top: 551,
     },
     boxC:{
+        // position:'absolute',
         position:'relative',
         alignItems:'center',
+        // width: 241,
+        // height:84,
+        // left: 93,
         top: 613,
     },
     btncardapio:{
+        // position: 'absolute',
         position:'relative',
         alignItems:'center',
-        width: 365,
-        height: 57.75,
+        // width: 365,
+        // height: 57.75,
+        // left: 31,
         top: 831,
         borderRadius:32,
         backgroundColor:'#FF919D',
     },
     textbtn:{
+        // fontFamily: 'Roboto-Black',
         fontSize: 24,
         fontWeight:500,
         textAlign: 'center',   
         color:'#FFFFFF',
+        // position: 'absolute',
         position: 'relative',
         alignItems: 'center',
+        // width: 180,
+        // height: 24.5,
+        // left: 146,
         top: 848,
     },
 
@@ -107,6 +129,7 @@ export const styles=StyleSheet.create({
     itemDesc:{
         width: '60%', 
         margin:12, 
+        // paddingVertical: 0,
         justifyContent:'space-around',
     },
     txtProduto:{
@@ -142,77 +165,8 @@ export const styles=StyleSheet.create({
         height: 160,
     },
 
-    // //Styles página Finalizar Pedido
-
-    txtNomePedido:{
-        fontSize:24,
-        fontWeight:500,
-        color:'#464646',
-    },
-    txtDescPedido:{
-        fontSize:13,
-        fontWeight:300,
-        color:'#464646',
-        marginTop:16,
-    },
-    txtSubtitulo:{
-        fontSize:16,
-        fontWeight:500,
-        marginTop:16,
-    },
-    boxPedido: {
-        position:'absolute',
-        width: '100%',
-        height:751,
-        left: 0,
-        top: 180,
-        borderTopLeftRadius: 32,
-        borderTopRightRadius: 32,
-        backgroundColor: '#FFFFFF',
-        textAlign: 'left',
-        padding:32,
-    },
-    qtd:{
-        borderWidth:1, 
-        borderRadius:12, 
-        borderColor:'##88888840', 
-        flexDirection:'row', 
-        width:80,  
-        alignItems:'center',
-        justifyContent:'center',
-        
-    },
-    input:{
-        borderRadius:10,
-        borderColor:'black', 
-        height:90, 
-        padding:20, 
-        borderWidth:1,   
-    },
-    total:{
-        fontSize:24,
-        fontWeight:500,
-        color:'green',
-    },
-    btnPedido:{
-        position:'relative',
-        alignItems:'center',
-        width: 365,
-        height: 57.75,
-        marginTop:32,
-        top: 400,
-        borderRadius:32,
-        backgroundColor:'#FF919D',
-    },
-    txtFinalizar:{
-        textAlign:'center',
-        color:'#FFFFFF',
-        fontWeight:500,
-        alignItems:'center',
-        fontSize:24,
-        padding:10
-    },
-
+    // //Styles página ...
+    
     // //Style da página Pedido Realizado
 
     container:{
@@ -222,7 +176,6 @@ export const styles=StyleSheet.create({
         justifyContent:'center',
         alignItems:'center',
     },
-   
     imgVector:{
         display: 'flex',
         justifyContent:'flex-start',
