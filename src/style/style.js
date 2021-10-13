@@ -47,24 +47,26 @@ export const styles=StyleSheet.create({
     boxA:{
         position:'relative',
         alignItems:'center',
-        top: 495,
+        top: 490,
     },
     boxB:{
         position:'relative',
         alignItems:'center',
-        top: 551,
+        top: 500,
     },
     boxC:{
         position:'relative',
         alignItems:'center',
-        top: 613,
+        top: 550,
     },
-    btncardapio:{
-        position:'relative',
+    btn:{
         alignItems:'center',
+    },
+
+    btncardapio:{
         width: 365,
         height: 57.75,
-        top: 831,
+        top: 631,
         borderRadius:32,
         backgroundColor:'#FF919D',
     },
@@ -75,7 +77,7 @@ export const styles=StyleSheet.create({
         color:'#FFFFFF',
         position: 'relative',
         alignItems: 'center',
-        top: 848,
+        padding:10,
     },
 
     // //Style da página Cardapio
@@ -221,8 +223,12 @@ export const styles=StyleSheet.create({
         height:'100%',
         justifyContent:'center',
         alignItems:'center',
+
     },
-   
+    boxRealizado:{
+        height:'auto',
+        // padding:32,
+    },
     imgVector:{
         display: 'flex',
         justifyContent:'flex-start',
@@ -233,11 +239,22 @@ export const styles=StyleSheet.create({
         fontSize:24,
         fontWeight:500,
         color: '#FFFFFF',
+        padding:32,
     },
     txt3:{
         fontSize:13,
         fontWeight:300,
         color: '#FFFFFF',
+        padding:32,
+    },
+    txtVoltar:{
+        textAlign:'center',
+        marginTop:150,
+        alignItems:'flex-end',
+        fontSize:24,
+        fontWeight:500,
+        color: '#FFFFFF',
+        padding:32,
     },
     
 })

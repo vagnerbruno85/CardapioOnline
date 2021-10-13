@@ -11,7 +11,7 @@ export default function PedidoRealizado({navigation}){
         <LinearGradient colors={['#5EE163', '#4AC964', '#36AF64']}
             style={styles.container}
         >
-            <View >
+            <View style={styles.boxRealizado}>
                 <Image source={require('../../assets/vector.png')} 
                     style={styles.imgVector}
                 ></Image>
@@ -20,18 +20,8 @@ export default function PedidoRealizado({navigation}){
                 <Text style={styles.txt3}>Seu pedido está sendo preparado e logo logo saíra para a entrega.</Text>
                 
                 <View>
-                    <TouchableOpacity style={styles.btncardapio} onPress={() => {navigation.navigate('Cardapio')}}>
-                        
-                        <LinearGradient  
-                        style={{
-                            position: 'absolute',
-                            width: 365,
-                            height: 57.75,
-                            borderRadius: 32}}
-                            colors={['#F26172','#FF919D']
-                        }>
-                            <Text >Voltar para o cardápio</Text>
-                        </LinearGradient>
+                    <TouchableOpacity onPress={() => {navigation.navigate('Cardapio')}}>
+                            <Text style={styles.txtVoltar} >Voltar para o cardápio</Text>
                     </TouchableOpacity>
                 </View>
             </View>
