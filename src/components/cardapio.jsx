@@ -7,7 +7,7 @@ import { styles } from "../style/style";
 export default function Cardapio({navigation}){
     const [menu, setMenu] = useState([])
     const [isLoading, setLoading] = useState(true);
-
+    
     const pegaMenu = async () => {
         try {
             const produtos = await fetch('https://615b13564a360f0017a8147e.mockapi.io/menu');
