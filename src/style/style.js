@@ -59,9 +59,7 @@ export const styles=StyleSheet.create({
         alignItems:'center',
         top: 550,
     },
-    btn:{
-        alignItems:'center',
-    },
+    
 
     btncardapio:{
         width: 365,

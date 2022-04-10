@@ -2,10 +2,10 @@ import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from "@react-navigation/stack";
 
-import Home from './src/components/home';
-import Cardapio from './src/components/cardapio';
-import PedidoRealizado from './src/components/pedidoRealizado';
-import FinalizarPedido from './src/components/finalizarPedido';
+import Home from './src/screens/home';
+import Cardapio from './src/screens/cardapio';
+import PedidoRealizado from './src/screens/pedidoRealizado';
+import FinalizarPedido from './src/screens/finalizarPedido';
 
 const Stack = createStackNavigator();
 
