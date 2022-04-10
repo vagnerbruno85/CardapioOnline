@@ -1,9 +1,7 @@
 import React from 'react';
-import {View,Text,Image, Touchable, TouchableOpacity} from 'react-native';
+import {View,Text,Image, TouchableOpacity} from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { styles } from '../style/style';
-
-
 
 export default function PedidoRealizado({navigation}){
    
@@ -12,7 +10,7 @@ export default function PedidoRealizado({navigation}){
             style={styles.container}
         >
             <View style={styles.boxRealizado}>
-                <Image source={require('../../assets/vector.png')} 
+                <Image source={require('../../assets/Vector.png')} 
                     style={styles.imgVector}
                 ></Image>
                 
